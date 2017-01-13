@@ -1,0 +1,16 @@
+bin/
+lib/
+Win32/
+x64/
+Debug/
+Release/
+
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+
+*.sln
+*.suo
+*.VC.db
+*.vcxproj
+*.vcxproj.filters
