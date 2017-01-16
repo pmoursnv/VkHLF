@@ -129,7 +129,7 @@ namespace vkhlf
 
     protected:
       VKHLF_API Pipeline(std::shared_ptr<Device> const& device, std::shared_ptr<Allocator> const& allocator);
-      VKHLF_API void setPipeline(vk::Pipeline & pipeline);
+      VKHLF_API void setPipeline(vk::Pipeline const& pipeline);
 
     private:
       vk::Pipeline m_pipeline;

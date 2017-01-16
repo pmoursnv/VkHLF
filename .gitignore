@@ -12,5 +12,6 @@ cmake_install.cmake
 *.sln
 *.suo
 *.VC.db
+*.VC.opendb
 *.vcxproj
 *.vcxproj.filters

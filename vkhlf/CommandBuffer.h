@@ -122,7 +122,7 @@ namespace vkhlf
       VKHLF_API void waitEvents(vk::ArrayProxy<const std::shared_ptr<vkhlf::Event>> events, vk::PipelineStageFlags srcStageMask, vk::PipelineStageFlags dstStageMask, vk::ArrayProxy<const vk::MemoryBarrier> memoryBarriers, vk::ArrayProxy<const vk::BufferMemoryBarrier> bufferMemoryBarriers, vk::ArrayProxy<const vk::ImageMemoryBarrier> imageMemoryBarriers);
       VKHLF_API void writeTimestamp(vk::PipelineStageFlagBits pipelineStage, std::shared_ptr<vkhlf::QueryPool> const& queryPool, uint32_t entry);
 
-      VKHLF_API std::shared_ptr<ResourceTracker> CommandBuffer::getResourceTracker() const;
+      VKHLF_API std::shared_ptr<ResourceTracker> getResourceTracker() const;
       VKHLF_API std::vector<std::shared_ptr<vkhlf::CommandBuffer>> const& getSecondaryCommandBuffers() const;
 
       VKHLF_API operator vk::CommandBuffer() const;
