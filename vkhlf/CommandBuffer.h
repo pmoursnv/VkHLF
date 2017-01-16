@@ -137,8 +137,8 @@ namespace vkhlf
       VKHLF_API bool isSimultaneousUsageAllowed() const;
 #endif
 
-      VKHLF_API CommandBuffer(CommandBuffer const& rhs) = delete;
-      VKHLF_API CommandBuffer & operator=(CommandBuffer const& rhs) = delete;
+      CommandBuffer(CommandBuffer const& rhs) = delete;
+      CommandBuffer & operator=(CommandBuffer const& rhs) = delete;
 
     protected:
       friend class CommandPool;
